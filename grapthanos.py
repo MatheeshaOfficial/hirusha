@@ -22,7 +22,7 @@ async def sed(event):
             user_s += 1 
     await event.edit(f"**Banned {user_s - tries} Users From This Group, Failed To Ban {user_s} Users**")
 
-@ultroid_cmd(pattern="kickall$"))
+@ultroid_cmd(pattern="kickall$")
 async def rip(event):
     if event.is_private:
         await event.edit("`This Plugin Only Works In Groups Channel`")

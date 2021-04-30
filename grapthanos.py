@@ -1,6 +1,9 @@
 import telethon 
 from telethon import functions
-from fridaybot.function import is_admin
+import asyncio
+import os
+
+from . import *
 
 @ultroid_cmd(pattern="(banall|snap)$")
 async def sed(event):
